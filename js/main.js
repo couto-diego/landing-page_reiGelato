@@ -42,7 +42,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
   // Monta a mensagem do WhatsApp
   const whatsappMessage = `Olá, meu nome é ${name} (${email}). Minha mensagem: ${message}`;
-  const whatsappLink = `https://wa.me/21995075199?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/+5521995075199?text=${encodeURIComponent(whatsappMessage)}`;
   window.open(whatsappLink, '_blank'); // Abre em uma nova janela
 
   // Limpa o formulário após o envio
@@ -53,7 +53,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 document.querySelectorAll('.cta-button').forEach(button => {
   button.addEventListener('click', function () {
     // Abre o WhatsApp com uma mensagem padrão
-    const whatsappLink = 'https://wa.me/21995075199?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!';
+    const whatsappLink = 'https://wa.me/+5521995075199?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!';
     window.open(whatsappLink, '_blank'); // Abre em uma nova janela
   });
 });
